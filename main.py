@@ -6,14 +6,17 @@ adlar=[]
 
 while True:
     ad,soyad=map(str,input().split())
+    ad.capitalize()
+    soyad.capitalize()
     if ad=='0' and soyad=='0':
         break 
     else:
         adlar.append(ad+' '+soyad)
+
 adlar.sort()
 aa=1
 for i in adlar:
-    print(str(aa)+'. '+i)
+    print(str(aa)+'. '+i.title())
     aa+=1
 
 
